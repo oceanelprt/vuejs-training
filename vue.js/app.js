@@ -1,10 +1,10 @@
-// Affiche un warning
+// Shows a warning
 console.warn("Hello world");
 
-// Affiche une erreur 
+// Shows an error 
 console.error("Hello world")
 
-// Clear la console
+// Clear console
 console.clear("Hello world");
 
 var fun = Vue.createApp({
