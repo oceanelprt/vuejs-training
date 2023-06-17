@@ -1,15 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <PAGES />
+  <NewOne />
+  <MyPage />
+  <InputBoxes />
 </template>
 
 <script>
-import PAGES from './components/New-onef.vue'
+import NewOne from './components/New-onef.vue'
+import MyPage from './components/my-page.vue'
+import InputBoxes from './components/input-boxes.vue'
 
 export default {
   name: 'App',
   components: {
-    PAGES,
+    NewOne,
+    MyPage,
+    InputBoxes
   }
 }
 </script>

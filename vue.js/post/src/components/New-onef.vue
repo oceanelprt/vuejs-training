@@ -15,7 +15,7 @@
 
 <script>
     export default{
-        name: "PAGES",
+        name: "New-one",
         data() {
             return {
                 email: "abcd@gmail.com",
