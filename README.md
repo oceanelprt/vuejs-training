@@ -1,17 +1,18 @@
 # Vue.js
 
 ## Using Vue.js with installation
-    Install node and NPM
-    Check if the installation is correctly done :
+###   Install node and NPM
+####    Check if the installation is correctly done :
 ```
 node -v
 npm -v
 ```
-    Install vueCLI :
+
+###    Install vueCLI :
 ```
 npm install -g @vue/cli
 ```
-    Check if the installation is correctly done :
+###    Check if the installation is correctly done :
 ```
 vue
 ```
