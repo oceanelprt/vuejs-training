@@ -8,6 +8,9 @@
     <h1>Data : {{ getData() }}</h1>
     <h1>Data email : {{ getData().email }}</h1>
     <h1>Data phone : {{ getData().mobile }}</h1>
+    <button v-on:click="fun()">Click for fun !</button>
+    <button v-on:dblclick="getData2('hello')">Click here !</button>
+    <h1 v-on:mousemove="getConsole()">Homepage</h1>
 </template>
 
 <script>
@@ -35,6 +38,15 @@
                     mobile: this.mobile,
                 }
             },
+            fun(){
+                alert("How are you ?");
+            },
+            getData2(data){
+                alert(data);
+            },
+            getConsole() {
+                console.log("Function is running");
+            }
         },
     }
 </script>
