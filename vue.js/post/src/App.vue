@@ -7,8 +7,9 @@
   <ForLoop />
   <SchoolComponent />
   <FormComponent />
-  <PropsComponent />-->
-  <ComputedPropertyComponent />
+  <PropsComponent />
+  <ComputedPropertyComponent />-->
+  <WatcherComponent />
 </template>
 
 <script>
@@ -20,8 +21,9 @@
   import SchoolComponent from './components/school.vue'
   import FormComponent from './components/form.vue'
   import PropsComponent from './components/props.vue'
-*/
   import ComputedPropertyComponent from './components/computed-property.vue'
+*/
+  import WatcherComponent from './components/watcher.vue'
 
   export default {
     name: 'App',
@@ -33,8 +35,9 @@
       ForLoop,
        SchoolComponent,
        FormComponent,
-       PropsComponent, */
-       ComputedPropertyComponent,
+       PropsComponent,
+       ComputedPropertyComponent, */
+       WatcherComponent,
     }
   }
 </script>
