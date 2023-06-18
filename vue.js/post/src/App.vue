@@ -6,8 +6,9 @@
   <IfElseCondition />
   <ForLoop />
   <SchoolComponent />
-  <FormComponent />-->
-  <PropsComponent />
+  <FormComponent />
+  <PropsComponent />-->
+  <ComputedPropertyComponent />
 </template>
 
 <script>
@@ -18,8 +19,9 @@
   import ForLoop from './components/for-loop.vue'
   import SchoolComponent from './components/school.vue'
   import FormComponent from './components/form.vue'
-*/
   import PropsComponent from './components/props.vue'
+*/
+  import ComputedPropertyComponent from './components/computed-property.vue'
 
   export default {
     name: 'App',
@@ -30,8 +32,9 @@
       IfElseCondition,
       ForLoop,
        SchoolComponent,
-       FormComponent,*/
-       PropsComponent
+       FormComponent,
+       PropsComponent, */
+       ComputedPropertyComponent,
     }
   }
 </script>
