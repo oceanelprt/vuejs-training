@@ -28,7 +28,6 @@
 
     <h3>Selected sports : {{ sports }}</h3>
     <h3>Selected player : {{ player }}</h3>
-
 </template>
 
 <script>
