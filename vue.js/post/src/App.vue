@@ -4,6 +4,7 @@
   <MyPage />
   <InputBoxes />
   <IfElseCondition />
+  <ForLoop />
 </template>
 
 <script>
@@ -11,6 +12,7 @@
   import MyPage from './components/my-page.vue'
   import InputBoxes from './components/input-boxes.vue'
   import IfElseCondition from './components/if-else.vue'
+  import ForLoop from './components/for-loop.vue'
 
   export default {
     name: 'App',
@@ -19,6 +21,7 @@
       MyPage,
       InputBoxes,
       IfElseCondition,
+      ForLoop,
     }
   }
 </script>
