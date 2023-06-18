@@ -4,8 +4,9 @@
   <MyPage />
   <InputBoxes />
   <IfElseCondition />
-  <ForLoop /> -->
-  <SchoolComponent />
+  <ForLoop /> 
+  <SchoolComponent />-->
+  <FormComponent />
 </template>
 
 <script>
@@ -14,7 +15,10 @@
   import InputBoxes from './components/input-boxes.vue'
   import IfElseCondition from './components/if-else.vue'
   import ForLoop from './components/for-loop.vue'
- */  import SchoolComponent from './components/school.vue'
+  import SchoolComponent from './components/school.vue'
+*/
+
+  import FormComponent from './components/form.vue'
 
   export default {
     name: 'App',
@@ -24,7 +28,8 @@
       InputBoxes,
       IfElseCondition,
       ForLoop,
- */      SchoolComponent,
+       SchoolComponent,*/
+       FormComponent,
     }
   }
 </script>
