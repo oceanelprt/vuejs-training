@@ -27,7 +27,11 @@
         <br/>
         <button v-on:click="login()">Sign up</button>
 
-        <p>{{ form }}</p>
+        <ul>
+            <li v-for="error in errors" v-bind:key="error">
+                {{ error }} not submitted
+            </li>
+        </ul>
     </form>
 </template>
 
@@ -41,13 +45,24 @@
                     password:"",
                     hobbies: [],
                     gender: "",
-                }
+                },
+                errors : [],
             }
         },
         methods:{
             login(){
-                console.log(this.form)
-            }
+                this.errors = [];
+                for (const item in this.form) {
+                    if (this.form[item] === "" || this.form[item].length === 0) {
+                        this.errors.push(item);
+                    }
+                }
+
+                if (this.errors.length === 0) {
+                    alert("Information has been submitted");
+                }
+                console.table(this.form, this.errors);
+            },
         },
     }
 </script>
