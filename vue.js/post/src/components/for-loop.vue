@@ -17,9 +17,12 @@
             Contact is : {{ data.contact }}
         </li>
     </ul>
+
+    <Child name="Tony Stark" :userTony="userTony" :getData="getData"/>
 </template>
 
 <script>
+    import Child from './child.vue'
     export default {
         name: "for-loop",
         data() {
@@ -41,8 +44,22 @@
                         email: "mickael@gmail.com",
                         contact: +5651548548
                     },
-                ]
+                ],
+                userTony:
+                {
+                    name: "Tony",
+                    email: "tony@gmail.com",
+                    contact: +5651548548
+                },
             };
+        },
+        components: {
+            Child,
+        },
+        methods: {
+            getData(){
+                alert("Method called");
+            },
         }
     };
 </script>
