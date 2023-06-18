@@ -9,7 +9,9 @@
             <newUser :user="user"/>
         </li>
     </ul>
-
+    <h1 v-html="peterEmail"></h1>
+    <div v-html="peterId"></div>
+    <newUser />
 </template>
 
 <script>
@@ -45,7 +47,10 @@
                         name:'Oliver',
                         email: 'oli@gmail.com',
                     },
-                ]
+                ],
+                peterName: 'Peter',
+                peterEmail: '<h3>peter123@gmail.com</h3>',
+                peterId: '<h1>26556</h1>',
             };
         },
         components: {
@@ -54,7 +59,7 @@
     };
 </script>
 
-<style scoped>
+<style>
     h3 {
         color:blue;
         font-weight: bold;
