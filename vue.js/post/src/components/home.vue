@@ -10,6 +10,9 @@
     <ForLoop/> -->
 
     <component :is="active"/>
+    <Teleport to="#header">
+        <HeaderComponent/>
+    </Teleport>
 </template>
 
 <script>
@@ -17,6 +20,7 @@
     import SchoolComponent from './school.vue';
     import IfElseCondition from './if-else.vue';
     import ForLoop from './for-loop.vue';
+    import HeaderComponent from './header.vue';
 
     export default {
         name: "home-component",
@@ -30,6 +34,7 @@
             SchoolComponent,
             IfElseCondition,
             ForLoop,
+            HeaderComponent,
         },
     };
 </script>
