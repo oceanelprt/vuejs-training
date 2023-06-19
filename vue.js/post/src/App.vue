@@ -41,7 +41,16 @@
        ComputedPropertyComponent, 
        WatcherComponent,*/
        HomeComponent,
-    }
+    },
+    data() {
+      console.log('created');
+    },
+    beforeCreate() {
+      alert('Loading...');
+    },
+    created() {
+      alert('Loaded');
+    },
   }
 </script>
 
