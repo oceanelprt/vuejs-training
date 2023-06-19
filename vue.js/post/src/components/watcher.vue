@@ -29,12 +29,8 @@
         <template v-slot:section><h3>Product</h3></template>
         <template v-slot:main><h3>Name</h3></template>
         <template v-slot:footer><h2>Price</h2></template>
-<<<<<<< HEAD
-    </ChildSlotComponent></template>
-=======
     </ChildSlotComponent>
 </template>
->>>>>>> Dynamic components
 
 <script>
     import ChildSlotComponent from './child-slot.vue'
