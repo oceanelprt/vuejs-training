@@ -8,8 +8,9 @@
   <SchoolComponent />
   <FormComponent />
   <PropsComponent />
-  <ComputedPropertyComponent />-->
-  <WatcherComponent />
+  <ComputedPropertyComponent />
+  <WatcherComponent />-->
+  <HomeComponent/>
 </template>
 
 <script>
@@ -22,8 +23,9 @@
   import FormComponent from './components/form.vue'
   import PropsComponent from './components/props.vue'
   import ComputedPropertyComponent from './components/computed-property.vue'
-*/
   import WatcherComponent from './components/watcher.vue'
+*/
+  import HomeComponent from './components/home.vue'
 
   export default {
     name: 'App',
@@ -36,8 +38,9 @@
        SchoolComponent,
        FormComponent,
        PropsComponent,
-       ComputedPropertyComponent, */
-       WatcherComponent,
+       ComputedPropertyComponent, 
+       WatcherComponent,*/
+       HomeComponent,
     }
   }
 </script>
