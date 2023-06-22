@@ -1,5 +1,9 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  <h1 ref="counter">Count : {{ count }}</h1>
+  <button v-on:click="count = count + 1">Up</button>
+
+  <br /><br />
 <!--   <NewOne />
   <MyPage />
   <InputBoxes />
@@ -44,6 +48,9 @@
     },
     data() {
       console.log('created');
+      return {
+        count: 0,
+      };
     },
     // beforeCreate() {
     //   alert('Loading...');
@@ -51,11 +58,17 @@
     // created() {
     //   alert('Loaded');
     // },
-    beforeMount() {
-      console.log("This is a beforeMount methode", this.$el);
+    // beforeMount() {
+    //   console.log("This is a beforeMount methode", this.$el);
+    // },
+    // mounted() {
+    //   console.log("This is a mounted methode", this.$el);
+    // },
+    beforeUpdate() {
+      console.log("beforeUpdate", this.$refs['counter'].textContent);
     },
-    mounted() {
-      console.log("This is a mounted methode", this.$el);
+    updated() {
+      console.log("Updated", this.count);
     },
   }
 </script>
