@@ -4,6 +4,8 @@
   <button v-on:click="count = count + 1">Up</button>
 
   <br /><br />
+  <button v-on:click="show = !show">Show</button>
+  <br />
 <!--   <NewOne />
   <MyPage />
   <InputBoxes />
@@ -14,7 +16,7 @@
   <PropsComponent />
   <ComputedPropertyComponent />
   <WatcherComponent />-->
-  <HomeComponent/>
+  <HomeComponent v-if="show"/>
 </template>
 
 <script>
@@ -50,6 +52,7 @@
       console.log('created');
       return {
         count: 0,
+        show: true,
       };
     },
     // beforeCreate() {
@@ -64,12 +67,12 @@
     // mounted() {
     //   console.log("This is a mounted methode", this.$el);
     // },
-    beforeUpdate() {
-      console.log("beforeUpdate", this.$refs['counter'].textContent);
-    },
-    updated() {
-      console.log("Updated", this.count);
-    },
+    // beforeUpdate() {
+    //   console.log("beforeUpdate", this.$refs['counter'].textContent);
+    // },
+    // updated() {
+    //   console.log("Updated", this.count);
+    // },
   }
 </script>
 
