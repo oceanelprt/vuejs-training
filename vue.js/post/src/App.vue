@@ -45,11 +45,17 @@
     data() {
       console.log('created');
     },
-    beforeCreate() {
-      alert('Loading...');
+    // beforeCreate() {
+    //   alert('Loading...');
+    // },
+    // created() {
+    //   alert('Loaded');
+    // },
+    beforeMount() {
+      console.log("This is a beforeMount methode", this.$el);
     },
-    created() {
-      alert('Loaded');
+    mounted() {
+      console.log("This is a mounted methode", this.$el);
     },
   }
 </script>
