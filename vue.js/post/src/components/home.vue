@@ -1,4 +1,5 @@
 <template>
+    <h1 ref="removing">Before unmount & unmounted</h1>
     <button @click="active = 'WatcherComponent'">Watcher</button>
     <button @click="active = 'SchoolComponent'">School</button>
     <button @click="active = 'IfElseCondition'">If else</button>
@@ -35,6 +36,12 @@
             IfElseCondition,
             ForLoop,
             HeaderComponent,
+        },
+        beforeUnmount() {
+            console.log('beforeUnmount', this.$refs['removing']);
+        },
+        unmounted() {
+            console.log('unmounted', this.$refs['removing']);
         },
     };
 </script>
